@@ -38,7 +38,7 @@ function makeCharTable(pattern: string): number[] {
 
   for (let i = 0; i < pattern.length - 1; i++) {
     const charCode = pattern.charCodeAt(i);
-    table[charCode] = pattern.length - 1 - 1;
+    table[charCode] = pattern.length - 1 - i;
   }
 
   return table;
