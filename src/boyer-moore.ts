@@ -31,7 +31,8 @@ export function boyerMooreSearch(text: string, pattern: string): number {
 function makeCharTable(pattern: string): number[] {
   let table = [];
 
-  // 65536 is the make value of char + 1
+  // 65536 is the max value of char + 1
+  // See: https://stackoverflow.com/a/15553731/4552841
   for (let i = 0; i < 65536; i++) {
     table.push(pattern.length);
   }
